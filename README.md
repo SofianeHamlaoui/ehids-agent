@@ -76,13 +76,9 @@ Current progress & Changes
 
 See also : [CFC4N's eBPF development environment](https://www.cnxct.com/lessons-using-ebpf-accelerating-cloud-native-zh/?f=github#i-3)
 
-* sudo apt-get install -y make gcc libssl-dev bc libelf-dev libcap-dev clang gcc-multilib llvm libncurses5-dev git
-  pkg-config libmnl-dev bison flex graphviz
-* sudo apt-get install -y make gcc clang llvm git pkg-config dpkg-dev gcc-multilib
-* cd ~/download/
 * sudo apt update
-* sudo apt-get source linux-image-$(uname -r)
-* sudo apt-get source linux-image-unsigned-$(uname -r)
+* sudo apt-get install -y make gcc libssl-dev bc libelf-dev libcap-dev clang llvm libncurses5-dev git
+  pkg-config libmnl-dev bison flex graphviz
 * sudo apt install libbfd-dev libcap-dev zlib1g-dev libelf-dev libssl-dev
 
 # Compiling and running
@@ -91,7 +87,7 @@ See also : [CFC4N's eBPF development environment](https://www.cnxct.com/lessons-
 
 ```shell
 git clone https://github.com/ehids/ehids-agent.git
-cd ehids
+cd ehids-agent
 make
 ./bin/ehids-agent
 ```
